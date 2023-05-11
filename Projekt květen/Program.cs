@@ -1,6 +1,7 @@
 ﻿using Projekt_květen;
     bool exit = false;
-    while (!exit)
+Inventory inventory = new Inventory();
+while (!exit)
     {
         Console.WriteLine("------------------------");
         Console.WriteLine("Vyberte akci");
@@ -9,9 +10,7 @@
         Console.WriteLine("2. Odebrat produkt");
         Console.WriteLine("3. Zobrazit inventář");
         Console.WriteLine("4. Konec programu");
-        string choice = Console.ReadLine();
-
-        Inventory inventory = new Inventory();
+        string choice = Console.ReadLine();       
 
         switch (choice)
         {
@@ -37,4 +36,4 @@
                 Console.Clear();
                 Console.WriteLine("Chyba: Neplatná volba.");
                 break;
-    }   }
+}       }
