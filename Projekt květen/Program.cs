@@ -1,5 +1,5 @@
 ﻿using Projekt_květen;
-    bool exit = false;
+bool exit = false;
 Inventory inventory = new Inventory();
 while (!exit)
     {
@@ -11,7 +11,6 @@ while (!exit)
         Console.WriteLine("3. Zobrazit inventář");
         Console.WriteLine("4. Konec programu");
         string choice = Console.ReadLine();       
-
         switch (choice)
         {
             case "1":

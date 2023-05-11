@@ -9,7 +9,6 @@ namespace Projekt_květen
     class Inventory
     {
         private List<Product> produkty = new List<Product>();
-
         public void PridatProdukt()
         {
             Product produkt = new Product();
@@ -30,7 +29,6 @@ namespace Projekt_květen
                 Console.WriteLine("Chyba při přidávání produktu: " + ex.Message);
             }
         }
-
         public void OdebratProdukt()
         {
             try
@@ -44,7 +42,6 @@ namespace Projekt_květen
                 Console.WriteLine("Chyba při odebírání produktu: " + ex.Message);
             }
         }
-
         public void VypisInventar()
         {
             Console.WriteLine("Aktuální inventář:");
