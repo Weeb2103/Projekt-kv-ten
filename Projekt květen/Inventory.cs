@@ -22,6 +22,7 @@ namespace Projekt_květen
                 Console.Write("Napiš počet: ");
                 produkt.Quantity = int.Parse(Console.ReadLine());
                 produkty.Add(produkt);
+                Console.Clear();
                 Console.WriteLine(produkt.Name  + " byl přidán");
             }
             catch (Exception ex)

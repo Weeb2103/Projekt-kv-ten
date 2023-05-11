@@ -2,8 +2,9 @@
     bool exit = false;
     while (!exit)
     {
+        Console.WriteLine("------------------------");
         Console.WriteLine("Vyberte akci");
-    Console.WriteLine("------------------------");
+        Console.WriteLine("------------------------");
         Console.WriteLine("1. Přidat produkt");
         Console.WriteLine("2. Odebrat produkt");
         Console.WriteLine("3. Zobrazit inventář");
@@ -15,7 +16,7 @@
         switch (choice)
         {
             case "1":
-            inventory.PridatProdukt();
+            inventory.PridatProdukt();            
                 break;
 
             case "2":
@@ -23,6 +24,7 @@
                 break;
 
             case "3":
+            Console.Clear();
             inventory.VypisInventar();
                 break;
 
@@ -32,6 +34,7 @@
                 break;
 
             default:
+                Console.Clear();
                 Console.WriteLine("Chyba: Neplatná volba.");
                 break;
     }   }
